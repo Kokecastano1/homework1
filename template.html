@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan work</title>
+    <link href="minimal.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+        <form action="" method="get">
+            <h2><b>Payment Form</b></h2>
+            Required fields are followed with*
+    <p>
+        <h2><b>Contact Information</b></h2>
+    </p>
+    <fieldset>
+        <legend>Title</legend>
+        <ul>
+            <li>
+                <input type="radio" id="teachertype" name="radiotype" value="teacher">
+                <label for="teachertype">Teacher</label>
+            </li>
+            <li>
+                <input type="radio" id="studenttype" name="radiotype" value="student">
+                <label for="studenttype">Student</label>
+            </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+            <label>Username *</label>
+            <input type="text" name="username" Placeholder="username" required>
+        <div>
+            <label>Password *</label>
+            <input type="password" name="password" placeholder="password" minlength="8 characters" required>
+        </div>
+        <div>
+            <label> Email * </label>
+            <input type="email" name="email" id="email" required>
+        </div>
+    </fieldset>
+    <fieldset>
+        <h2>Payment Information</h2>
+            <div>
+                <label for="first name">First Name *</label>
+                <input id="first name" type="text" maxlength="10" name="firstname" required>
+                <label for="last name">Last Name *</label>
+                <input id="last name" maxlength="10" type="text" name="lastname" required>
+            </div>
+            <div>
+                <label for="ccn">Card Number *:</label>
+                <input id="ccn" type="number" inputmode="numeric" autocomplete="cc-number" maxlength="16" minlength="16"
+                placeholder="xxxx xxxx xxxx xxxx" required>
+            </div>
+            <div>
+                <label for="expdate">Exp Date *</label>
+                <input type="date" id="expdate" name="expdate" type="date" required>
+            </div>
+        <selection>
+            <label for="cardtype">Card Type *</label>
+            <select name="cardtype" id="cardtype" required>
+                <option value="blank" selected disabled></option>
+                <option value="visa">Visa</option>
+                <option value="amex">Amex</option>
+                <option value="mastercard">MasterCard</option>
+            </select>
+        </selection>
+        <p>
+            <label for="checkbox"> Check box if you agree to terms and conditions</label>
+            <input id="checkbox" type="checkbox" name="checkbox" required>
+        </p>
+        <p>
+            <button>Validate the payment</button>
+        </p>
+        </form>
+    </fieldset>
+
+</body>
+
+</html>
